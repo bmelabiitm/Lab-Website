@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Members | Bioprocess and Metabolic Engineering Lab | IIT Madras</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .member-card {
+            transition: all 0.3s ease;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-2xl font-bold">BME</a>
+                    <span class="hidden md:block">Bioprocess & Metabolic Engineering Lab</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                    <a href="members.html" class="hover:text-blue-200 transition font-semibold">Members</a>
+                    <a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a>
+                    <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg px-6 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                <a href="members.html" class="hover:text-blue-200 transition font-semibold">Members</a>
+                <a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a>
+                <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Members Header -->
+    <div class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Our Team</h1>
+            <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Meet the people behind our innovative research
+            </p>
+        </div>
+    </div>
+
+    <!-- Principal Investigator -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Principal Investigator</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center bg-gray-50 rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <div class="md:w-1/3">
+                        <img src="images\Guhan Jayaraman.jpg" alt="Dr. Guhan Jayaraman" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2">Dr. Guhan Jayaraman</h3>
+                        <p class="text-green-600 font-medium mb-4">Principal Investigator</p>
+                        <p class="text-gray-600 mb-4">
+                            Dr. Guhan Jayaraman is a Professor in the Department of Biotechnology at IIT Madras. His research focuses on bioprocess engineering, metabolic engineering and downstream processing industrial biotechnology applications.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Metabolic Engineering</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Bioprocess Development</span>
+                            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded-full text-sm">Synthetic Biology</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Current Lab Members</h2>
+            <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+            <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Our talented team of researchers working on various aspects of bioprocess and metabolic engineering
+            </p>
+        </div>
+
+        <!-- Postdoctoral Researchers Section -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4" data-aos="fade-up">Postdoctoral Researchers</h3>
+            <div class="w-16 h-1 bg-green-400 mx-auto mb-8" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-6 gap-8">
+                <!-- Pravina Devi -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\Pravine.jpg" alt="Pravina Devi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Pravina Devi</h3>
+                        <p class="text-green-600 text-sm mb-3">Postdoctoral Researcher</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Strain engineering & process optimization
+                        </p>
+                     </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+
+
+        <!-- Doctoral Students Section -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4" data-aos="fade-up">Doctoral Students</h3>
+            <div class="w-16 h-1 bg-green-400 mx-auto mb-8" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
+                <!-- Repeat this card for 15 scholars, customizing the names and details as appropriate -->
+                <!-- Scholar 1 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\Sandeep.jpg" alt="Sandeep Panda" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Sandeep K Panda</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Synthetic Biology & Metabolic Engineering
+                        </p>
+                    </div>
+                </div>
+               
+ 		
+
+		<!-- Scholar 4 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\richa.jpg" alt="Richa S" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Richa S</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Synthetic Biology & Metabolic Engineering
+                        </p>
+                    </div>
+                </div>
+
+		<!-- Scholar 5 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\uma.jpg" alt="Uma R" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Uma R</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Metabolic & Bioprocess Engineering
+                        </p>
+                    </div>
+                </div>
+		
+		
+		<!-- Scholar 6 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\kala.jpg" alt="Kala B" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Kala B</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Metabolic & Bioprocess Engineering
+                        </p>
+                    </div>
+                </div>
+
+
+
+		<!-- Scholar 7 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\surya.jpg" alt="Surya S Nair" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Surya S Nair</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Cancer Diagnostics
+                        </p>
+                    </div>
+                </div>
+
+
+		<!-- Scholar 8 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\prash.jpg" alt="Prashant Singh" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Prashant Singh</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lignin Valorization
+                        </p>
+                    </div>
+                </div>
+
+
+		<!-- Scholar 9 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\ananthi.jpg" alt="Ananthi P" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Ananthi P</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Downstream Processing
+                        </p>
+                    </div>
+                </div>
+
+		<!-- Scholar 10 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\anki.jpg" alt="K Ankita Rao" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">K Ankita Rao</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Bioprocess Engineering
+                        </p>
+                    </div>
+                </div>
+
+		<!-- Scholar 11 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\priya.jpg" alt="Priyadharshini T" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Priyadharshini T</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lignin Valorization
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  	<!-- Co-guided Students -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4" data-aos="fade-up">Co-Guided Doctoral Students</h3>
+            <div class="w-16 h-1 bg-green-400 mx-auto mb-8" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-6 gap-8">
+                
+
+                <!-- Scholar 2 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images\geethai.jpg" alt="Geethapriyai M" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Geethapriyai Murugavel</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Bio-electrochemical systems
+                        </p>
+                      
+                    </div>
+                </div>
+
+
+<!-- Scholar 3 -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images\shristi.jpg" alt="Shrishti Kumari" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Shrishti Kumari</h3>
+                        <p class="text-green-600 text-sm mb-3">PhD Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Molecular Diagnostic Platforms
+                        </p>
+                        
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- MS by Research Students Section -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4" data-aos="fade-up">MS by Research Students</h3>
+            <div class="w-16 h-1 bg-green-400 mx-auto mb-8" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-6 gap-8">
+                                
+
+
+		<!-- Sripathi -->
+                <div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images\sri.jpg" alt="Sripathi S" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Sripathi S</h3>
+                        <p class="text-green-600 text-sm mb-3">MS by Research Scholar</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Metabolic Engineering
+                        </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Group Photos -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Group Photos</h2>
+            <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+        </div>
+        
+           
+	<div class="grid grid-cols-1 sm:grid-cols-1 gap-8">
+		<div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images\grp4.jpg" alt="Group Photo 1" class="w-full h-100 object-cover">
+		</div>
+
+		<div class="member-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+		     <img src="images\grp1.jpg" alt="Group Photo 1" class="w-full h-100 object-cover">
+
+                </div>
+            
+    </section>
+
+
+
+<!-- Alumni Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Lab Alumni</h2>
+            <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+            <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Our former members who have moved on to exciting positions in academia and industry
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            
+
+	<!-- Alumni R -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Sharath S</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: SynBioME: An IITM Biofoundry, IIT Madras, Chennai, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: sharath.igene@gmail.com
+                </p>
+        </div>
+
+
+	
+	<!-- Alumni T -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Suchismita Maiti</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: 
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: 
+                </p>
+        </div>
+
+	<!-- Alumni Z1 -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">R Nakul</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: PhD Scholar, RPI, Troy, NY, USA
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: nakulravi2001@gmail.com
+                </p>
+        </div>
+
+
+	<!-- Alumni R2 -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Manoj Kumar S</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: 
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: 
+                </p>
+        </div>
+
+
+	<!-- Alumni X -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Vishnu Prasad J</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Kodo Lifesciences, Chennai, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: vishnuprasadktl@gmail.com
+                </p>
+        </div>
+
+
+
+	<!-- Alumni Y -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">K V Krishnan</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Kodo Lifesciences, Chennai, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: krishnan.vishy@gmail.com
+                </p>
+        </div>
+
+	<!-- Alumni Z -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Vaishnavi S</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Post-Doc, IIT Madras, Chennai, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: X
+                </p>
+        </div>
+
+
+	<!-- Alumni 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Anbuthangam Ashokan</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Intas Pvt. Ltd, Ahmedabad, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: anbuthamgamatg@gmail.com
+                </p>
+        </div>
+	
+	<!-- Alumni 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Vivek Rajendran</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Kashiv BioSciences LLC, Ahmedabad, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: viveka259@gmail.com
+                </p>
+            </div>
+
+
+<!-- Alumni 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Pandeeswari Jeeva</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Post-Doc, Northwestern University, Evanston, IL, USA
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: pandeeswarijeeva@gmail.com
+                </p>
+            </div>
+
+<!-- Alumni 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Tridweep K Sahoo</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Biocon Ltd., Bengaluru, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: tridweeps@gmail.com
+                </p>
+            </div>
+
+
+<!-- Alumni 5 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">P. Kirubhakaran	  	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Intas Pvt. Ltd., Ahmedabad, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: p20kirubha@gmail.com
+                </p>
+            </div>
+
+<!-- Alumni 6 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">S. Sreeja Doss		</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Associate Professor, Vellore Institute of Technology, Vellore, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: s.sreejadoss@gmail.com
+                </p>
+            </div>
+
+
+<!-- Alumni 7 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Ashish Chauhan		</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Biocon Ltd., Bengaluru, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: ashishpuzzle@gmail.com		
+                </p>
+            </div>
+
+
+<!-- Alumni 8 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Shashi Bala Prasad		</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Laurus Bio Pvt Ltd., Bengaluru, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: replyshashi@gmail.com	
+                </p>
+            </div>
+
+
+<!-- Alumni 9 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">P. Sivakumar	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Kashiv BioSciences LLC, Ahmedabad, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: sivakumar.sivakumar@gmail.com	
+                </p>
+            </div>
+
+<!-- Alumni 10 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Velu Mahalingam	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Kashiv BioSciences LLC, Ahmedabad, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: velu.mahalingam@gmail.com
+                </p>
+            </div>
+
+
+<!-- Alumni 11 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Kalpana Kaushik		</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Foundation for Medical Research, Mumbai, India
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: kalpanasriraman@yahoo.com
+                </p>
+            </div>
+
+<!-- Alumni 12 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Balaji Balagurunathan	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Singapore Institute of Food and Biotechnology Innovation, Singapore
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: balaji.chem@gmail.com	
+                </p>
+            </div>
+
+      
+     
+<!-- Alumni 13 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Kamakshi C	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: X
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: X	
+                </p>
+            </div>
+
+<!-- Alumni 14 -->
+            <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                <h3 class="text-lg font-semibold text-blue-900 mb-1">Abinaya Badri	</h3>
+                <p class="text-gray-600 text-sm mb-3">
+                    Affiliation: Ginkgo Bioworks, USA
+                </p>
+                <p class="text-gray-500 text-xs">
+                   Email: X	
+                </p>
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+           
+            
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BME Lab</h3>
+                    <p>Bioprocess & Metabolic Engineering Lab</p>
+                    <p>X6QH+Q36, Play Field Ave</p>
+                    <p>Indian Institute of Technology Madras</p>
+                    <p>Chennai, Tamil Nadu 600036</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="hover:text-blue-200 transition">Research</a></li>
+                        <li><a href="members.html" class="hover:text-blue-200 transition font-semibold">Members</a></li>
+                        <li><a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjlab.iitmbio@gmail.com</p>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjinternships@gmail.com</p>
+                </div>
+                
+            </div>
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Bioprocess & Metabolic Engineering Lab, IIT Madras. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+

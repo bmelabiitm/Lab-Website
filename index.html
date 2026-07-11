@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioprocess and Metabolic Engineering Lab | IIT Madras</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-2xl font-bold">BME</a>
+                    <span class="hidden md:block">Bioprocess & Metabolic Engineering Lab</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                    <a href="members.html" class="hover:text-blue-200 transition">Members</a>
+                    <a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a>
+                    <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg px-6 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                <a href="members.html" class="hover:text-blue-200 transition">Members</a>
+                <a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a>
+                <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="hero" class="relative overflow-hidden gradient-bg text-white">
+        <div class="container mx-auto px-6 py-20 md:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-right">Bioprocess & Metabolic Engineering Lab</h1>
+                <p class="text-xl md:text-2xl mb-8" data-aos="fade-right" data-aos-delay="100">Exploring innovative solutions at the intersection of biotechnology and engineering</p>
+                <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#about" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Learn More</a>
+                    <a href="contact.html" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 z-0 opacity-30">
+            <div id="vanta-globe"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6">About Our Lab</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        The Bioprocess and Metabolic Engineering Lab (BME) at IIT Madras, led by Dr. Guhan Jayaraman, focuses on developing innovative bioprocess technologies and metabolic engineering strategies for sustainable production of biochemicals, and biofuels.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our research integrates systems biology, synthetic biology, and bioprocess engineering to design and optimize microbial cell factories for industrial applications
+                    </p>
+                    <a href="research.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        Explore our research <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden">
+                        <img src="images\homepage.jpg" alt="Lab research" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Research Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 hover-scale card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="git-merge" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Metabolic Engineering</h3>
+                    <p class="text-gray-600">
+                        Designing and optimizing metabolic pathways in microorganisms for enhanced production of target compounds
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover-scale card-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="cpu" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bioprocess Engineering</h3>
+                    <p class="text-gray-600">
+                        Developing scalable and sustainable bioprocesses for industrial applications
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 hover-scale card-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-800 mb-4">
+                        <i data-feather="arrow-down-circle" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Downstream Processing</h3>
+                    <p class="text-gray-600">
+                        
+			Recombinant protein purification to deliver high-quality products from lab-scale fermentations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border-l-4 border-blue-600 pl-4" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-2">New Publication in Journal of Applied Microbiology</h3>
+                    <p class="text-gray-600 mb-2">Our lab's recent work on adaptive laboratory evolution for lignin valorization has been published in Journal of Applied Microbiology</p>
+                    <span class="text-sm text-gray-500">June 06, 2025</span>
+                </div>
+                <div class="border-l-4 border-green-600 pl-4" data-aos="fade-left">
+                    <h3 class="text-xl font-semibold mb-2">Collaboration with Industry Partner</h3>
+                    <p class="text-gray-600 mb-2">We've initiated a new collaboration with AATREL Green Renewable Energy Pvt. Ltd.
+to develop strategies for renewable energy production </p>
+                    <span class="text-sm text-gray-500">July, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BME Lab</h3>
+                    <p>Bioprocess & Metabolic Engineering Lab</p>
+                    <p>X6QH+Q36, Play Field Ave</p>
+                    <p>Indian Institute of Technology Madras</p>
+                    <p>Chennai, Tamil Nadu 600036</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="hover:text-blue-200 transition">Research</a></li>
+                        <li><a href="members.html" class="hover:text-blue-200 transition">Members</a></li>
+                        <li><a href="facilities.html" class="hover:text-blue-200 transition">Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjlab.iitmbio@gmail.com</p>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjinternships@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Bioprocess & Metabolic Engineering Lab, IIT Madras. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        VANTA.GLOBE({
+            el: "#vanta-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x0
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

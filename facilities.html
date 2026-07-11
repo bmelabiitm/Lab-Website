@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Facilities | Bioprocess and Metabolic Engineering Lab | IIT Madras</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .facility-card {
+            transition: all 0.3s ease;
+        }
+        .facility-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-2xl font-bold">BME</a>
+                    <span class="hidden md:block">Bioprocess & Metabolic Engineering Lab</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                    <a href="members.html" class="hover:text-blue-200 transition">Members</a>
+                    <a href="facilities.html" class="hover:text-blue-200 transition font-semibold">Facilities</a>
+                    <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg px-6 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="research.html" class="hover:text-blue-200 transition">Research</a>
+                <a href="members.html" class="hover:text-blue-200 transition">Members</a>
+                <a href="facilities.html" class="hover:text-blue-200 transition font-semibold">Facilities</a>
+                <a href="projects.html" class="hover:text-blue-200 transition">Projects</a>
+                <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Facilities Header -->
+    <div class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Research Facilities</h1>
+            <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                State-of-the-art equipment and infrastructure supporting our research
+            </p>
+        </div>
+    </div>
+
+    <!-- Facilities Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Our Laboratory Facilities</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Our lab is equipped with modern instruments and infrastructure to support cutting-edge research in bioprocess and metabolic engineering
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div data-aos="fade-right">
+                    <img src="images\Facility.jpeg" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="flex flex-col justify-center" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Comprehensive Research Infrastructure</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our laboratory operates with dedicated spaces for molecular biology, fermentation, and analytical work. The facility includes incubators and biosafety cabinets for sterile work
+                    </p>
+                    <p class="text-gray-600">
+                        We maintain a well-equipped instrumentation room with advanced analytical equipment and a computational facility for bioinformatics and modeling work
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Major Equipment -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4" data-aos="fade-up">Major Equipment</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Our key instruments that enable cutting-edge research in metabolic engineering and bioprocess development
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Equipment 1 -->
+                <div class="facility-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up">
+                    <img src="images\nirs.jpg" alt="Bioreactor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Bioreactor Systems</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Lab-scale benchtop bioreactors with advanced control systems for pH, DO, temperature, and feeding
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Fermentation</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Process Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Equipment 2 -->
+                <div class="facility-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images\hplc.jpg" alt="HPLC" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">HPLC System</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            High-performance liquid chromatography system with UV-Vis and RI detectors for metabolite analysis
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Analytical</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Metabolite Profiling</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Equipment 3 -->
+                <div class="facility-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images\RT.jpg" alt="PCR" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Real-time PCR</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Quantitative PCR system for gene expression analysis and genetic engineering applications
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Molecular Biology</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Gene Expression</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Equipment 4 -->
+                <div class="facility-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images\PCC.jpeg" alt="PCC" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Periodic counter-current chromatography</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Continuous and efficient purification of proteins and antibodies for improved product recovery in downstream processing
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Protein purification</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Matrix Assisted Refolding</span>
+                        </div>
+                    </div>
+                </div>
+
+
+		<!-- Equipment 5 -->
+                <div class="facility-card bg-white rounded-xl overflow-hidden card-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images\Plate.jpg" alt="Microplate Reader" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Microplate Reader</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Multimode microplate reader for absorbance, fluorescence, and luminescence measurements.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">High-throughput screening</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Assay Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BME Lab</h3>
+                    <p>Bioprocess & Metabolic Engineering Lab</p>
+                    <p>X6QH+Q36, Play Field Ave</p>
+                    <p>Indian Institute of Technology Madras</p>
+                    <p>Chennai, Tamil Nadu 600036</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="research.html" class="hover:text-blue-200 transition">Research</a></li>
+                        <li><a href="members.html" class="hover:text-blue-200 transition">Members</a></li>
+                        <li><a href="facilities.html" class="hover:text-blue-200 transition font-semibold">Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjlab.iitmbio@gmail.com</p>
+                    <p><i data-feather="mail" class="inline mr-2"></i> gjinternships@gmail.com</p>
+                </div>
+                                </div>
+            </div>
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Bioprocess & Metabolic Engineering Lab, IIT Madras. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
